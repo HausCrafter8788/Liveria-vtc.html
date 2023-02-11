@@ -13,13 +13,14 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     
     <title>Liveria VTC</title>
+    <link rel="website icon" type="png" href="images/logo.png">
 </head>
 <body>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="logo.png" alt="">
+                    <img src="images/logo.png" alt="">
                 </span>
 
                 <div class="text logo-text">
