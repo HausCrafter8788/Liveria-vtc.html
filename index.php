@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
     
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -114,6 +114,6 @@
         <div class="text">Dashboard Sidebar</div>
     </section>
 
-    <script src="css/index.css"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
