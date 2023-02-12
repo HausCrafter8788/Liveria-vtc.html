@@ -63,6 +63,12 @@
                         <span class="text nav-text">Login</span>
                     </a>
                 </li>
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
 
                 <li class="mode">
                     <div class="sun-moon">
