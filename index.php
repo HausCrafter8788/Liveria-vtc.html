@@ -51,10 +51,16 @@
             </div>
 
             <div class="bottom-content">
+				<li class="">
+					<a href="#">
+						<i class='bx bx-user-plus icon'></i>
+						<span class="text nav-text">Register</span>
+					</a>
+				</li>
                 <li class="">
                     <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
-                        <span class="text nav-text">Logout</span>
+                        <i class='bx bx-log-in icon' ></i>
+                        <span class="text nav-text">Login</span>
                     </a>
                 </li>
 
