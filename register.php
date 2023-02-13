@@ -1,3 +1,18 @@
+<?php
+$servername = "localhost";
+$username = "ADMIN";
+$password = "Password";
+$dbname = "registration_db";
+
+/// Create connextion
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+/// Check connectiom
+if (!$conn) {
+    die("Connextion failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
+
 <!DOCTYPE html>
   <!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
@@ -82,9 +97,43 @@
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard Sidebar</div>
+        <div class="text">Registration</div>        
+        <form action="register.php" method="post">
+            <label for ="first_name">Vorname:</label>
+            <input type="text" name="first_name" id="first_name" required><br><br>
+            <label for ="username">Username:</label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for ="email">Email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for ="password">Passwort:</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <input type ="submit" value="Submit">
+        </form>
     </section>
 
     <script src="js/index.js"></script>
 </body>
 </html>
+
+<?php
+// Check if the form was submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    /// Escape user inputs for security
+    $first_name = mysqli_real_escape_string($conn, $_POST['first_name']),
+    $username = mysqli_real_escape_string($conn, $_POST['username']),
+    $email = mysqli_real_escape_string($conn, $_POST['email']),
+    $password = mysqli_real_escape_string($conn, $_POST['password']),
+
+    // Attempt insert query execution
+    $sql = "INSERT INTO registrants (first_name, username, email, password)
+    VALUES ('$first_name', '$username', '$email' , '$password')";
+    
+    if (mysqli_query($conn, $sql)) {
+        echo "Record added successfully.";
+    } else {
+        echo "ERROR : Could not execute §sql. " . mysqli_error($conn);
+    }
+}
+// Close connection
+mysqli_close($conn);
+?>

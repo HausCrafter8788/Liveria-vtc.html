@@ -24,8 +24,8 @@
                 </span>
 
                 <div class="text logo-text">
-                    <span class="name">Codinglab</span>
-                    <span class="profession">Web developer</span>
+                    <span class="name">Liveria VTC</span>
+                    <span class="profession">Spedition & Logistig</span>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@
 
             <div class="bottom-content">
 				<li class="">
-					<a href="#">
+					<a href="register.php">
 						<i class='bx bx-user-plus icon'></i>
 						<span class="text nav-text">Register</span>
 					</a>
